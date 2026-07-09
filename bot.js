@@ -2,7 +2,7 @@ const http = require('http');
 const TelegramBot = require('node-telegram-bot-api');
 const { findSettings, UNIVERSAL } = require('./settings');
 
-const token = process.env.BOT_TOKEN;
+const token = process.env.BOT_TOKEN || '8717894049:AAGn5zw_h28MotXOo1nM4sYCFs6Um0ZosOg';
 
 const bot = new TelegramBot(token, { polling: true });
 
